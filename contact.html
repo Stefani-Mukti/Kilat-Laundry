@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Kontak — KilatLaundry</title>
+  <meta name="description" content="Hubungi KilatLaundry lewat WhatsApp, telepon, atau email. Isi formulir singkat dan pesananmu langsung terkirim ke chat kami." />
+  <link rel="canonical" href="https://kilatlaundry.id/contact.html" />
+  <meta property="og:title" content="Kontak KilatLaundry" />
+  <meta property="og:description" content="Chat, telepon, atau isi formulir untuk mulai pesan." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://kilatlaundry.id/contact.html" />
+  <link rel="icon" href="assets/icons/favicon.svg" type="image/svg+xml" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="assets/css/variables.css" />
+  <link rel="stylesheet" href="assets/css/base.css" />
+  <link rel="stylesheet" href="assets/css/navbar.css" />
+  <link rel="stylesheet" href="assets/css/footer.css" />
+  <link rel="stylesheet" href="assets/css/hero.css" />
+  <link rel="stylesheet" href="assets/css/components.css" />
+  <link rel="stylesheet" href="assets/css/animations.css" />
+  <link rel="stylesheet" href="assets/css/pages/contact.css" />
+</head>
+<body data-page="contact">
+  <a class="skip-link" href="#main">Lewati ke konten utama</a>
+  <div id="navbar-root"></div>
+
+  <main id="main">
+    <section class="hero hero--page">
+      <div class="hero__dots"></div>
+      <div class="hero__inner">
+        <div class="breadcrumb"><a href="index.html">Home</a><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m9 6 6 6-6 6"></path></svg><span>Contact</span></div>
+        <h1 class="hero__title">Ngobrol dulu, baru jadwalkan penjemputan</h1>
+        <p class="hero__lead">Cara tercepat menghubungi kami adalah lewat WhatsApp. Atau isi formulir di bawah, pesanmu langsung tersusun rapi untuk dikirim.</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container grid grid-3" style="gap: var(--sp-5); margin-bottom: var(--sp-8);">
+        <div class="card reveal text-center">
+          <div class="card__icon" style="margin-inline:auto;"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2 22l5.29-1.39a9.9 9.9 0 0 0 4.75 1.21h.01c5.46 0 9.9-4.45 9.9-9.91C21.96 6.45 17.5 2 12.04 2Z"></path></svg></div>
+          <h3>WhatsApp</h3>
+          <p class="card__text">Respon tercepat, biasanya di bawah 10 menit.</p>
+          <a class="btn btn--outline" data-wa-link="contact" target="_blank" rel="noopener">Chat Sekarang</a>
+        </div>
+        <div class="card card--accent reveal text-center">
+          <div class="card__icon" style="margin-inline:auto;"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 4H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2Z"></path><path d="m22 6-10 7L2 6"></path></svg></div>
+          <h3>Email</h3>
+          <p class="card__text">Untuk kerja sama atau pertanyaan formal.</p>
+          <a class="btn btn--outline" href="mailto:halo@kilatlaundry.id" data-email>halo@kilatlaundry.id</a>
+        </div>
+        <div class="card reveal text-center">
+          <div class="card__icon" style="margin-inline:auto;"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"></circle><path d="M12 7v5l3 2"></path></svg></div>
+          <h3>Jam Operasional</h3>
+          <p class="card__text">Senin–Sabtu <span data-hours-weekday>07.00–21.00</span><br />Minggu 08.00–20.00</p>
+        </div>
+      </div>
+
+      <div class="container grid grid-2" style="gap: var(--sp-8); align-items:flex-start;">
+        <div class="card reveal">
+          <h2>Kirim Detail Pesananmu</h2>
+          <p class="text-muted" style="margin-bottom:var(--sp-6);">Isi formulir ini, dan pesan WhatsApp akan otomatis tersusun untuk kamu kirim ke tim kami.</p>
+          <form data-contact-form novalidate>
+            <div class="form-field">
+              <label for="name">Nama Lengkap</label>
+              <input type="text" id="name" name="name" placeholder="Nama kamu" required />
+              <div class="form-field__error">Nama wajib diisi.</div>
+            </div>
+            <div class="form-field">
+              <label for="phone">Nomor WhatsApp</label>
+              <input type="tel" id="phone" name="phone" placeholder="08xxxxxxxxxx" required />
+              <div class="form-field__error">Nomor WhatsApp wajib diisi.</div>
+            </div>
+            <div class="form-field">
+              <label for="address">Alamat Penjemputan</label>
+              <input type="text" id="address" name="address" placeholder="Jalan, nomor rumah, kecamatan" required />
+              <div class="form-field__error">Alamat wajib diisi.</div>
+            </div>
+            <div class="form-field">
+              <label for="service">Layanan yang Diinginkan</label>
+              <select id="service" name="service">
+                <option value="Cuci & Lipat">Cuci & Lipat</option>
+                <option value="Cuci & Setrika">Cuci & Setrika</option>
+                <option value="Dry Clean">Dry Clean</option>
+                <option value="Express 6 Jam">Express 6 Jam</option>
+                <option value="Cuci Sepatu">Cuci Sepatu</option>
+                <option value="Karpet / Bed Cover">Karpet / Bed Cover</option>
+              </select>
+            </div>
+            <div class="form-field">
+              <label for="message">Catatan Tambahan (opsional)</label>
+              <textarea id="message" name="message" placeholder="Contoh: tolong jemput sore hari, ada noda di kemeja putih"></textarea>
+            </div>
+            <button type="submit" class="btn btn--primary btn--block btn--lg">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2 22l5.29-1.39a9.9 9.9 0 0 0 4.75 1.21h.01c5.46 0 9.9-4.45 9.9-9.91C21.96 6.45 17.5 2 12.04 2Z"></path></svg>
+              Kirim ke WhatsApp
+            </button>
+            <p class="form-hint text-center" style="margin-top:var(--sp-3);">Tombol ini akan membuka WhatsApp dengan pesan yang sudah terisi otomatis.</p>
+          </form>
+        </div>
+
+        <div class="reveal">
+          <img src="assets/icons/favicon.svg" alt="Lokasi kantor KilatLaundry" style="border-radius: var(--radius-lg); box-shadow: var(--shadow-md); margin-bottom: var(--sp-5);" loading="lazy" width="600" height="420" />
+          <div class="card">
+            <h3>Alamat Kantor</h3>
+            <p class="card__text" data-address>Jl. Kaliurang KM 5 No. 12, Sleman, Yogyakarta</p>
+            <p class="card__text" style="margin-top:var(--sp-3);">Kunjungan hanya untuk drop-off langsung. Untuk penjemputan, jadwalkan lewat WhatsApp.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <div id="footer-root"></div>
+  <div id="wa-float-root"></div>
+
+  <script src="assets/js/config.js"></script>
+  <script src="assets/js/components.js"></script>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
