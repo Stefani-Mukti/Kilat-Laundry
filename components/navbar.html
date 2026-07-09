@@ -1,0 +1,57 @@
+<!-- ==========================================================================
+     Navbar component — injected by assets/js/components.js into
+     <div id="navbar-root"></div> on every page.
+     Edit this single file to update the nav on the whole site.
+     ========================================================================== -->
+<header class="navbar">
+  <div class="navbar__inner">
+    <a href="index.html" class="navbar__logo" aria-label="KilatLaundry - Beranda">
+      <span class="navbar__logo-mark">
+        <svg viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="13" r="7"></circle><path d="M8 13a4 4 0 0 0 8 0" stroke="white"></path><path d="M9 3h6l1 3H8l1-3Z"></path></svg>
+      </span>
+      Kilat<span class="accent">Laundry</span>
+    </a>
+
+    <nav aria-label="Navigasi utama">
+      <ul class="navbar__menu" data-nav-menu>
+        <li><a href="index.html" data-page="index">Home</a></li>
+        <li><a href="about.html" data-page="about">About</a></li>
+        <li><a href="services.html" data-page="services">Services</a></li>
+        <li><a href="pricing.html" data-page="pricing">Pricing</a></li>
+        <li><a href="how-it-works.html" data-page="how-it-works">Cara Kerja</a></li>
+        <li><a href="coverage-area.html" data-page="coverage-area">Area</a></li>
+        <li><a href="faq.html" data-page="faq">FAQ</a></li>
+        <li><a href="gallery.html" data-page="gallery">Gallery</a></li>
+        <li><a href="contact.html" data-page="contact">Contact</a></li>
+      </ul>
+    </nav>
+
+    <div class="navbar__actions">
+      <a class="btn btn--primary" data-wa-link="order" target="_blank" rel="noopener">
+        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2 22l5.29-1.39a9.9 9.9 0 0 0 4.75 1.21h.01c5.46 0 9.9-4.45 9.9-9.91C21.96 6.45 17.5 2 12.04 2Zm5.8 14.1c-.24.68-1.4 1.3-1.93 1.34-.5.05-1 .25-3.38-.7-2.86-1.14-4.69-4.04-4.83-4.23-.14-.19-1.16-1.54-1.16-2.94 0-1.4.73-2.08 1-2.36.26-.28.57-.35.76-.35.19 0 .38 0 .55.01.18.01.42-.07.65.5.24.58.81 2 .88 2.14.07.14.12.31.02.5-.1.19-.15.31-.29.48-.14.17-.3.37-.43.5-.14.14-.29.29-.12.57.17.28.75 1.24 1.62 2 1.11.99 2.05 1.3 2.33 1.44.28.14.44.12.6-.07.17-.19.71-.83.9-1.11.19-.28.38-.24.63-.14.26.09 1.64.77 1.92.91.28.14.47.21.54.33.07.12.07.68-.17 1.36Z"></path></svg>
+        Pesan via WhatsApp
+      </a>
+      <button class="navbar__burger" type="button" aria-label="Buka menu navigasi" aria-expanded="false" data-burger>
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<div class="navbar__overlay" data-overlay></div>
+<aside class="navbar__drawer" data-drawer aria-hidden="true">
+  <ul class="navbar__drawer-menu" data-nav-menu>
+    <li><a href="index.html" data-page="index">Home</a></li>
+    <li><a href="about.html" data-page="about">About</a></li>
+    <li><a href="services.html" data-page="services">Services</a></li>
+    <li><a href="pricing.html" data-page="pricing">Pricing</a></li>
+    <li><a href="how-it-works.html" data-page="how-it-works">How It Works</a></li>
+    <li><a href="coverage-area.html" data-page="coverage-area">Coverage Area</a></li>
+    <li><a href="faq.html" data-page="faq">FAQ</a></li>
+    <li><a href="gallery.html" data-page="gallery">Gallery</a></li>
+    <li><a href="contact.html" data-page="contact">Contact</a></li>
+  </ul>
+  <div class="navbar__drawer-cta">
+    <a class="btn btn--primary btn--block" data-wa-link="order" target="_blank" rel="noopener">Pesan via WhatsApp</a>
+  </div>
+</aside>
