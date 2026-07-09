@@ -1,0 +1,109 @@
+/* ==========================================================================
+   Hero — shared base (per-page variants layer on top)
+   ========================================================================== */
+.hero {
+  position: relative;
+  background: linear-gradient(160deg, var(--color-bg-dark) 0%, #163f80 55%, var(--color-primary) 100%);
+  color: #fff;
+  overflow: hidden;
+  padding-block: var(--sp-9) var(--sp-8);
+}
+.hero__inner {
+  position: relative;
+  z-index: 2;
+  max-width: var(--container-max);
+  margin-inline: auto;
+  padding-inline: var(--sp-5);
+}
+.hero--split .hero__inner {
+  display: grid;
+  grid-template-columns: 1.1fr 0.9fr;
+  gap: var(--sp-8);
+  align-items: center;
+}
+.hero--split .hero__inner > * { min-width: 0; }
+.hero__title { font-size: var(--fs-4xl); color: #fff; max-width: 620px; }
+.hero__title .accent { color: #7dd6a0; }
+.hero__lead { font-size: var(--fs-md); color: #cfdcf5; max-width: 520px; margin-bottom: var(--sp-6); }
+.hero__actions { display: flex; gap: var(--sp-4); flex-wrap: wrap; }
+
+.hero--page { padding-block: var(--sp-8) var(--sp-7); }
+.hero--page .hero__title { font-size: var(--fs-3xl); }
+.hero--page .hero__lead { margin-bottom: var(--sp-3); }
+
+/* Decorative dot grid */
+.hero__dots {
+  position: absolute; inset: 0;
+  background-image: radial-gradient(rgba(255,255,255,0.12) 1.5px, transparent 1.5px);
+  background-size: 22px 22px;
+  mask-image: radial-gradient(circle at 80% 30%, black, transparent 70%);
+  z-index: 1;
+}
+
+/* Signature element: pickup -> wash -> deliver route line, used in Home + How It Works heroes */
+.route {
+  position: relative;
+  background: rgba(255, 255, 255, 0.06);
+  border: 1px solid rgba(255, 255, 255, 0.14);
+  border-radius: var(--radius-lg);
+  padding: var(--sp-6);
+  backdrop-filter: blur(6px);
+}
+.route__path {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+}
+.route__node {
+  display: flex;
+  align-items: center;
+  gap: var(--sp-4);
+  padding-block: var(--sp-3);
+  position: relative;
+}
+.route__node-dot {
+  width: 40px; height: 40px;
+  border-radius: 50%;
+  background: var(--color-white);
+  color: var(--color-primary);
+  display: flex; align-items: center; justify-content: center;
+  flex-shrink: 0;
+  box-shadow: 0 0 0 6px rgba(255,255,255,0.08);
+  z-index: 2;
+}
+.route__node-dot svg { width: 18px; height: 18px; }
+.route__node:last-child .route__node-dot { background: var(--color-accent); color: #fff; }
+.route__node-text .route__node-title { font-weight: 700; color: #fff; font-size: var(--fs-sm); }
+.route__node-text .route__node-sub { font-size: var(--fs-xs); color: #b7c8e8; }
+.route__node:not(:last-child)::after {
+  content: "";
+  position: absolute;
+  left: 20px; top: 52px; bottom: -4px;
+  width: 2px;
+  background-image: linear-gradient(rgba(255,255,255,0.5) 60%, transparent 40%);
+  background-size: 2px 10px;
+  background-repeat: repeat-y;
+}
+.route__eta {
+  position: absolute;
+  top: var(--sp-4); right: var(--sp-4);
+  background: var(--color-accent);
+  color: #fff;
+  font-size: var(--fs-xs);
+  font-weight: 700;
+  padding: var(--sp-1) var(--sp-3);
+  border-radius: var(--radius-pill);
+  box-shadow: var(--shadow-green);
+}
+
+@media (max-width: 920px) {
+  .hero--split .hero__inner { grid-template-columns: 1fr; }
+  .hero__title { font-size: var(--fs-2xl); }
+  .hero--page .hero__title { font-size: var(--fs-xl); }
+}
+
+@media (max-width: 480px) {
+  .hero__actions { flex-direction: column; align-items: stretch; }
+  .hero__actions .btn { width: 100%; text-align: center; }
+}

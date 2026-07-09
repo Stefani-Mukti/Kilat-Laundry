@@ -1,0 +1,69 @@
+/* ==========================================================================
+   KilatLaundry — Design Tokens
+   ========================================================================== */
+:root {
+  /* Color */
+  --color-primary: #1b4b91;
+  --color-primary-dark: #123b78;
+  --color-primary-light: #3e7bd6;
+  --color-primary-tint: #eaf1fc;
+  --color-accent: #16a34a;
+  --color-accent-dark: #128a3e;
+  --color-accent-tint: #e6f8ed;
+  --color-white: #ffffff;
+  --color-bg: #ffffff;
+  --color-bg-soft: #f5f8fc;
+  --color-bg-dark: #0f2a5c;
+  --color-ink: #16213e;
+  --color-ink-muted: #5b6b85;
+  --color-border: #e3e9f2;
+  --color-warning: #f59e0b;
+
+  /* Typography */
+  --font-display: 'Plus Jakarta Sans', 'Segoe UI', sans-serif;
+  --font-body: 'Inter', 'Segoe UI', sans-serif;
+
+  --fs-xs: 0.8125rem;
+  --fs-sm: 0.9375rem;
+  --fs-base: 1rem;
+  --fs-md: 1.125rem;
+  --fs-lg: 1.375rem;
+  --fs-xl: clamp(1.375rem, 1.1rem + 1.4vw, 1.75rem);
+  --fs-2xl: clamp(1.75rem, 1.4rem + 2vw, 2.25rem);
+  --fs-3xl: clamp(2.125rem, 1.5rem + 3vw, 3rem);
+  --fs-4xl: clamp(2.5rem, 1.7rem + 4vw, 3.75rem);
+
+  /* Spacing (8px scale) */
+  --sp-1: 0.25rem;
+  --sp-2: 0.5rem;
+  --sp-3: 0.75rem;
+  --sp-4: 1rem;
+  --sp-5: 1.5rem;
+  --sp-6: 2rem;
+  --sp-7: 3rem;
+  --sp-8: 4rem;
+  --sp-9: 6rem;
+  --sp-10: 8rem;
+
+  /* Radius */
+  --radius-sm: 10px;
+  --radius-md: 16px;
+  --radius-lg: 24px;
+  --radius-pill: 999px;
+
+  /* Shadow */
+  --shadow-sm: 0 2px 8px rgba(15, 42, 92, 0.06);
+  --shadow-md: 0 8px 24px rgba(15, 42, 92, 0.08);
+  --shadow-lg: 0 20px 48px rgba(15, 42, 92, 0.12);
+  --shadow-green: 0 10px 30px rgba(22, 163, 74, 0.25);
+
+  /* Layout */
+  --container-max: 1180px;
+  --header-h: 76px;
+
+  /* Motion */
+  --ease-out: cubic-bezier(0.16, 1, 0.3, 1);
+  --dur-fast: 180ms;
+  --dur-base: 320ms;
+  --dur-slow: 560ms;
+}
